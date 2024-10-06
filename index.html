@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- cntrl shift i - inspector. Зліва від elements буде доктіпе - це щоб звужувати розмір сторінки -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="God">
+        <section class="hero">
+            <div class="container_first">
+                <header class="header">
+                    <nav id="nav-links" class="header__nav">
+                        <ul>
+                            <li class="header__nav-item"><a href="">Home</a></li>
+                            <li class="header__nav-item"><a href="add_film.html" id="nav-link">Add film</a></li>
+                            <li class="header__nav-item"><a href="">Edit film</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search__button">
+                        <input type="text" id="searchInput" placeholder="Search by movie title ..."
+                            class="input__header">
+                    </div>
+                    <button id="searchButton" class="search">Search</button>
+                    <button id="clearButton" class="clear">Clear</button>
+                </header>
+            </div>
+
+            <div class="container">
+
+                <div class="hero__inner">
+
+                    <div class="left-block">
+
+                        <div class="section">
+                            <h1>Films Statistic</h1>
+                            <h3>Count total minutes</h3>
+                            <button class="bt_count">Count</button>
+                            <p>Total minutes: 0</p>
+                        </div>
+
+                        <div class="sort-section">
+                            <h3>Sort by number of reviews</h3>
+                            <button class="bt_sort">Sort</button>
+                        </div>
+                    </div>
+
+                    <div class="right__block" id="moviesContainer">
+
+                        <div class="card" data-title="The Silent Shore" data-duration="120" data-reviews="100">
+                            <img src="https://via.placeholder.com/235x150" alt="Placeholder Image">
+                            <div class="card-content">
+                                <h3>The Silent Shore</h3>
+                                <p>Duration: 120 min</p>
+                                <p>Reviews: 230</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button>Add</button>
+                                <button class="edit-btn">Edit</button>
+                            </div>
+                        </div>
+
+                        <div class="card" data-title="Starlight Odyssey" data-duration="150" data-reviews="412">
+                            <img src="https://via.placeholder.com/235x150" alt="Placeholder Image">
+                            <div class="card-content">
+                                <h3>Starlight Odyssey</h3>
+                                <p>Duration: 150 min</p>
+                                <p>Reviews: 412</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button>Add</button>
+                                <button class="edit-btn">Edit</button>
+                            </div>
+                        </div>
+
+                        <div class="card" data-title="Moonlit City" data-duration="98" data-reviews="320">
+                            <img src="https://via.placeholder.com/235x150" alt="Placeholder Image">
+                            <div class="card-content">
+                                <h3>Moonlit City</h3>
+                                <p>Duration: 98 min</p>
+                                <p>Reviews: 320</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button>Add</button>
+                                <button class="edit-btn">Edit</button>
+                            </div>
+                        </div>
+
+                        <div class="card" data-title="Echoes of Tomorrow" data-duration="140" data-reviews="525">
+                            <img src="https://via.placeholder.com/235x150" alt="Placeholder Image">
+                            <div class="card-content">
+                                <h3>Echoes of Tomorrow</h3>
+                                <p>Duration: 140 min</p>
+                                <p>Reviews: 525</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button>Add</button>
+                                <button class="edit-btn">Edit</button>
+                            </div>
+                        </div>
+
+                        <div class="card" data-title="Crimson Skies" data-duration="105" data-reviews="190">
+                            <img src="https://via.placeholder.com/235x150" alt="Placeholder Image">
+                            <div class="card-content">
+                                <h3>Crimson Skies</h3>
+                                <p>Duration: 105 min</p>
+                                <p>Reviews: 190</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button>Add</button>
+                                <button class="edit-btn">Edit</button>
+                            </div>
+                        </div>
+
+                        <div class="card" data-title="Winds of Fate" data-duration="135" data-reviews="300">
+                            <img src="https://via.placeholder.com/235x150" alt="Placeholder Image">
+                            <div class="card-content">
+                                <h3>Winds of Fate</h3>
+                                <p>Duration: 135 min</p>
+                                <p>Reviews: 300</p>
+                            </div>
+                            <div class="card-buttons">
+                                <button>Add</button>
+                                <button class="edit-btn">Edit</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="edit_form.js"></script>
+
+</body>
+
+</html>

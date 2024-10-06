@@ -1,0 +1,19 @@
+@import "./normalize.min.css";
+
+@import "./globals.css";
+
+@import "./header.css";
+
+@import "./hero.css";
+
+@import "./color.css";
+
+@import "./SecondSection.css";
+
+@import "./Third.Section.css";
+
+@import "./footer.css";
+
+@import "./animations.css";
+
+@import "./first_form.css" 
