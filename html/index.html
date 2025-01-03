@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- cntrl shift i - inspector. Зліва від elements буде доктіпе - це щоб звужувати розмір сторінки -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="God">
+        <section class="hero">
+            <div class="container_first">
+                <header class="header">
+                    <nav id="nav-links" class="header__nav">
+                        <ul>
+                            <li class="header__nav-item"><a href="">Home</a></li>
+                            <li class="header__nav-item"><a href="add_film.html">Add film</a></li>
+                            <li class="header__nav-item"><a href="">Edit film</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search__button">
+                        <input type="text" id="searchInput"  placeholder="Search by movie title ..." class="input__header">
+                    </div>
+                    <button id="searchButton" class="search">Search</button>
+                    <button id="clearButton" class="clear">Clear</button>
+                </header>
+            </div>
+
+            <div class="container">
+
+                <div class="hero__inner">
+
+                    <div class="left-block">
+
+                        <div class="section">
+                            <h1>Films Statistic</h1>
+                            <h3>Count total minutes</h3>
+                            <button class="bt_count">Count</button>
+                            <p>Total minutes: 0</p>
+                        </div>
+
+                        <div class="sort-section">
+                            <h3>Sort by number of reviews</h3>
+                            <button class="bt_sort">Sort</button>
+                        </div>
+                    </div>
+
+                    <div class="right__block" id="moviesContainer">
+
+                    
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+    
+    <!-- <script src="js/add_validation.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/edit_form.js"></script> -->
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>

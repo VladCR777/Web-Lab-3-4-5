@@ -1,0 +1,135 @@
+.hero {
+    max-width: 1240px; 
+    margin: 0 auto; 
+}
+
+.hero__inner {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    height: 100%;
+}
+
+.left-block {
+    padding: 20px;
+    background-color: #f8f9fa; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-block h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.left-block h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.left-block button {
+    background-color: #9a47ec;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.left-block button:hover {
+    opacity: 0.8;
+}
+
+.left-block p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.left-block .sort-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%; 
+    background-color: antiquewhite;
+}
+
+.left-block .sort-section h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%; 
+    background-color: antiquewhite;
+}
+
+
+.right__block {
+    padding: 20px;
+    background-color: #e9ecef; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(235px, 1fr)); 
+    gap: 20px; 
+}
+.movie-card {
+    display: grid; 
+    grid-template-rows: auto 1fr auto; 
+    background-color: #fff; 
+    border: 5px solid #2488e5; 
+    border-radius: 5px; 
+    padding: 10px; 
+    width: 220px; 
+    margin: 10px; 
+
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; 
+    border-bottom: 1px solid #ccc; 
+}
+
+.card-content {
+    padding: 10px; 
+}
+
+.card h3 {
+    margin: 0 0 10px; 
+    font-size: 18px; 
+}
+
+.card-buttons {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 10px; 
+}
+
+.card-buttons button {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    padding: 8px 12px; 
+    border-radius: 3px; 
+    cursor: pointer; 
+}
+
+.card-buttons button:last-child {
+    background-color: #6c757d; 
+}
+
+.card-buttons button:hover {
+    opacity: 0.8; 
+}

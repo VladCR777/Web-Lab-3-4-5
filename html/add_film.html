@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Film</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>Add New Film</h1>
+    </header>
+    
+    <main class="add-page">
+        <form id="addFilmForm">
+            <label for="filmName">Film Name:</label>
+            <input type="text" id="filmName" name="filmName" required>
+
+            <label for="duration">Duration (min):</label>
+            <input type="number" id="duration" name="duration" required>
+
+            <label for="reviews">Reviews:</label>
+            <textarea id="reviews" name="reviews" rows="4" required></textarea>
+
+            <button id="submit">Add Film</button>
+        </form>
+    </main>
+
+    <script>
+        document.getElementById("addFilmForm").addEventListener("submit", async function(event) {
+            event.preventDefault(); // Запобігає перезавантаженню сторінки
+
+            const filmData = {
+                name: document.getElementById("filmName").value,
+                duration: document.getElementById("duration").value,
+                reviews: document.getElementById("reviews").value,
+            };
+
+            try {
+                const response = await fetch("http://localhost:1337/api/films", { // Заміни URL на актуальний для бекенду
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(filmData),
+                });
+
+                if (!response.ok) {
+                    throw new Error("Failed to add film.");
+                }
+
+                // Перенаправлення на головну сторінку після успішного додавання фільму
+                window.location.href = "index.html";
+            } catch (error) {
+                console.error("Error:", error);
+                alert("Error adding film. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>
